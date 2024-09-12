@@ -1,0 +1,13 @@
+const express = require('express');
+
+const router = express.Router();
+
+router.get('/dashboard', (req, res) => {
+    res.send('Dashboard page')
+})
+
+router.get('/', (req, res) => {
+    res.send('Main page')
+})
+
+module.exports = router;
